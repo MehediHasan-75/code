@@ -1,0 +1,1 @@
+{"name":"Local: longest-common-prefix","url":"c:\\Users\\Mehedi\\Desktop\\codes\\leetcode\\longest-common-prefix.cpp","tests":[{"id":1692721833609,"input":"3\nflower \nflow\nflight","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Mehedi\\Desktop\\codes\\leetcode\\longest-common-prefix.cpp","group":"local","local":true}

@@ -1,0 +1,39 @@
+
+#include <bits/stdc++.h>
+using namespace std;
+#define fastio  ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
+
+#define prnt(x) for(auto &it: x)cout<<it<<" ";cout<<"\n";
+#define all(x) (x).begin(), (x).end()
+#define sz(x) ((ll)(x).size())
+
+typedef long long ll;
+typedef vector<ll> vll;
+const ll N = 2e5 + 10, inf=2e18;
+ll mod = 1000000007;
+void solve(ll tc)
+{
+    ll n;
+    cin>>n;
+
+    string s;
+    cin>>s;
+
+    ll ans=0;
+
+    ll i=0;
+
+    while(i<n and s[i]=='B')i++;
+    ll j=n-1;
+
+    while(j>=0 and s[j]=='A')j--;
+    cout<<max(0ll, j-i)<<endl;
+}
+int main()
+{
+    fastio;ll T = 1;
+    cin >> T;
+    for (ll i = 1; i <= T; i++)solve(i);
+    return 0;
+}
+

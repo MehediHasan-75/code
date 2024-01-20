@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Users/Mehedi/AppData/Local/Temp/AweZip/Temp1/AweZip7/archive-20181020-large/problems/two-strings/files",
+                "C:/Users/Mehedi/AppData/Local/Temp/AweZip/Temp2/AweZip0/archive-20181020-large/problems/two-strings/files"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}

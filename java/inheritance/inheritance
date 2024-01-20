@@ -1,0 +1,58 @@
+#parents(property, values, characteristics)--->children(can use this)
+        |Base class|
+            (l,w,h)
+             |
+            \ /
+        |Child class|
+            weight
+here child class can access l, w, h , weight but base class cant access weight
+@this child class is inheriting propertise from base class
+
+class Child extends Base{
+int weight;
+}
+@ extends keyword means Child calss will have the property of Base Class and also has some additional properties that base class dosent has
+Child child=new Child();
+child.l;
+child.w;
+child.h;
+
+            |Species|
+            (age)
+            /   \
+           /     \
+        |Human| |Fish|
+// parent can not access child property
+Box box5 =new BoxWeight(2, 3, 4, 8);
+here Box is referencing the object BoxWeight. we can,t access weight as 
+the element on reference veriable can only accessible.
+
+//there are many veriabls in both parent and child classes. you are only given access to veriables that are in the reference type.
+ BoxWeight box6= new Box(2, 3, 4);
+ // this will give an error because we can access the weight veriable as the reference is children type
+ //but the object itself it parent type . so how can we call constructor to initialize extra veriabls on children type class?
+ 
+ #types of ingeritace :
+ 1-->single inheritace: extends another class
+    _____
+    |Box|
+       |
+      \/
+    |BoxWeight|
+2--> multilevel inheritace:One children is parent for another
+   Box--> BoxWeight-->BoxPrice
+3--> multiple ingeritace: one class is extending more than one classes
+     if two or more parent classes have same veriable(property) then there will create a ambiguaty
+     hence java dosenot support multiple inheritance 
+    //here for this work java introduce interfaces
+4-->Hierarcial inheritace: One class is inheritad by many classes
+            |A|
+             |
+     \|/    \|/  \|/ \|/
+     B       C    D   E 
+5-->Hybride: single + multiple inheritace
+
+# a class cant be its own super class 
+public class B extends B{
+    //not allowed.
+}
